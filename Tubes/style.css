@@ -1,0 +1,60 @@
+@font-face {
+    font-family: FontMenu;
+    src: url(Font/Poppins-SemiBold.ttf);
+  }
+
+@font-face {
+    font-family: FontTitle;
+    src: url(Font/Quicksand-Bold.ttf);
+  }
+
+.logo {
+    margin-top: 20px;
+    margin-left: 130px;
+    margin-bottom: 30px;
+}
+
+.menu-kiri li {
+    font-family: FontMenu;
+    border: none;
+    font-size: 14pt;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu-kiri li a {
+    text-decoration: none;
+    color: #36A4FD;
+    padding: 10px;
+}
+
+.menu-kiri ul :hover{
+    background-color: #F3F1F1;
+    font-weight: bold;
+}
+
+.title {
+    font-family: FontTitle;
+    color: #36A4FD ;
+    margin-left: 20px;
+}
+
+.feeds {
+    border-left: solid 1px #36A4FD;
+    border-right: solid 1px #36A4FD;
+}
+
+.menu-kanan {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.icon{
+    margin-left: 50px;
+    border-style: outset;
+}
+
+.button-konsul {
+    background-color: #36A4FD;
+    border: none;
+}
