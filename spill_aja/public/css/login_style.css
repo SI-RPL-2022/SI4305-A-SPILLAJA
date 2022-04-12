@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #36A4FD;
+}
+
+.row{
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    
+}
+
+img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+form .title{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Quicksand", "sans-serief";
+    color: #36A4FD;
+}
+
+.col-lg-9 p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #757575;
+}
+
+.col-lg-7 input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.col-lg-7 input:focus,
+.col-lg-7 input:valid{
+    border-color: #36A4FD;
+}
+
+.col-lg-7 .form-control{
+    font-size: 16px;
+    font-weight: 300;
+    color: #757575;
+}
+
+.col-lg-7 .text a{
+    text-decoration: none;
+}
+
+.col-lg-7 .text a:hover{
+    text-decoration: underline;
+}
+
+.col-lg-7 .button{
+    height: 40px;
+    color: #fff;
+    background: #36A4FD;
+    border-radius: 15px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.col-lg-7 .button-daftar{
+    height: 40px;
+    color: #36A4FD;
+    background: #fff;
+    stroke: #36A4FD;
+    border-radius: 15px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.col-lg-7 .button:hover{
+    background: #1f8Be2;
+}
+
+.col-lg-7 .button-daftar:hover{
+    background: #EEECEC;
+}
+
+.col-lg-7 .signup-text,
+.col-lg-7 .login-text{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #757575;
+}
+
+.col-lg-7 label{
+    color: #36A4FD;
+    cursor: pointer;
+}
+
+.col-lg-7 label:hover{
+    text-decoration: underline;
+}

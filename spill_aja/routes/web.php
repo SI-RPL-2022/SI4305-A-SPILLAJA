@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+ 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +15,33 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('layouts.login.index');
+    return view('layouts.login.welcome');
 });
 
-Route::get('/login', [LoginController::class, 'index']);
+Route::get('login', function () {
+    return view('layouts.login.login');
+});
+
+Route::get('regis', function () {
+    return view('layouts.login.regis');
+});
+
+Route::get('main', function () {
+    return view('layouts.main');
+});
+
+Route::get('beranda', function () {
+    return view('beranda');
+});
+
+Route::get('pelecehan', function () {
+    return view('pelecehan');
+});
+
+Route::get('km', function () {
+    return view('km');
+});
+
+Route::get('riwayat', function () {
+    return view('riwayat');
+});
