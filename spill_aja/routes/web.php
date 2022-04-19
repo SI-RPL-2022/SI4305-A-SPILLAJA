@@ -45,3 +45,7 @@ Route::get('km', function () {
 Route::get('riwayat', function () {
     return view('riwayat');
 });
+
+Route::get('perundungan', function () {
+    return view('perundungan');
+});

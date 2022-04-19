@@ -36,7 +36,7 @@
                                 <a href="km">Kesehatan Mental</a>
                             </li>
                             <li class="list-group-item">
-                                <a href="#">Perundungan</a>
+                                <a href="perundungan">Perundungan</a>
                             </li>
                             <li class="list-group-item">
                                 <a href="riwayat">Riwayat</a>

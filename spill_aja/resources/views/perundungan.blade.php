@@ -6,7 +6,7 @@
 <body>
     <div class="col-md-7 feeds">
         <div class="d-flex justify-content-between border-bottom">
-            <strong class="title" style="font-size: 40pt;">Pelecehan Seksual</strong>
+            <strong class="title" style="font-size: 40pt;">Perundungan</strong>
         </div>
     
         <div class="hero">
