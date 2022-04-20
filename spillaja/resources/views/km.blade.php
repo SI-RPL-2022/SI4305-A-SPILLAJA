@@ -37,11 +37,7 @@
     <div class="feed-items py-3 px-3 border-bottom">
         <div class="d-flex w-100">
             <div class="image" style="padding-top: 18px;">
-<<<<<<< HEAD
                 <img src="images/FotoProfil.png" alt="" style="width:60px;">
-=======
-                <img src="image/FotoProfil.png" alt="" style="width:60px;">
->>>>>>> e440ddca6338c9732b8720f9710783dd933c9ed7
             </div>
             <div class="content-kiri" style="margin-left: 15px;">
                 <strong>Amanda Pricila, M.Psi, Psikolog</strong>
@@ -64,11 +60,7 @@
     <div class="feed-items py-3 px-3 border-bottom">
         <div class="d-flex w-100">
             <div class="image" style="padding-top: 18px;">
-<<<<<<< HEAD
                 <img src="images/FotoProfil.png" alt="" style="width:60px;">
-=======
-                <img src="image/FotoProfil.png" alt="" style="width:60px;">
->>>>>>> e440ddca6338c9732b8720f9710783dd933c9ed7
             </div>
             <div class="content-kiri" style="margin-left: 15px;">
                 <strong>Amanda Pricila, M.Psi, Psikolog</strong>
@@ -91,11 +83,7 @@
     <div class="feed-items py-3 px-3 border-bottom">
         <div class="d-flex w-100">
             <div class="image" style="padding-top: 18px;">
-<<<<<<< HEAD
                 <img src="images/FotoProfil.png" alt="" style="width:60px;">
-=======
-                <img src="image/FotoProfil.png" alt="" style="width:60px;">
->>>>>>> e440ddca6338c9732b8720f9710783dd933c9ed7
             </div>
             <div class="content-kiri" style="margin-left: 15px;">
                 <strong>Amanda Pricila, M.Psi, Psikolog</strong>
@@ -118,11 +106,7 @@
     <div class="feed-items py-3 px-3 border-bottom">
         <div class="d-flex w-100">
             <div class="image" style="padding-top: 18px;">
-<<<<<<< HEAD
                 <img src="images/FotoProfil.png" alt="" style="width:60px;">
-=======
-                <img src="image/FotoProfil.png" alt="" style="width:60px;">
->>>>>>> e440ddca6338c9732b8720f9710783dd933c9ed7
             </div>
             <div class="content-kiri" style="margin-left: 15px;">
                 <strong>Amanda Pricila, M.Psi, Psikolog</strong>
@@ -145,11 +129,7 @@
     <div class="feed-items py-3 px-3 border-bottom">
         <div class="d-flex w-100">
             <div class="image" style="padding-top: 18px;">
-<<<<<<< HEAD
                 <img src="images/FotoProfil.png" alt="" style="width:60px;">
-=======
-                <img src="image/FotoProfil.png" alt="" style="width:60px;">
->>>>>>> e440ddca6338c9732b8720f9710783dd933c9ed7
             </div>
             <div class="content-kiri" style="margin-left: 15px;">
                 <strong>Amanda Pricila, M.Psi, Psikolog</strong>
@@ -172,11 +152,7 @@
     <div class="feed-items py-3 px-3 border-bottom">
         <div class="d-flex w-100">
             <div class="image" style="padding-top: 18px;">
-<<<<<<< HEAD
                 <img src="images/FotoProfil.png" alt="" style="width:60px;">
-=======
-                <img src="image/FotoProfil.png" alt="" style="width:60px;">
->>>>>>> e440ddca6338c9732b8720f9710783dd933c9ed7
             </div>
             <div class="content-kiri" style="margin-left: 15px;">
                 <strong>Amanda Pricila, M.Psi, Psikolog</strong>

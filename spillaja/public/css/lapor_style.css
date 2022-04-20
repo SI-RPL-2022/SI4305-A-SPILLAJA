@@ -1,0 +1,49 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+    max-width: 500px;
+}
+
+.input-group{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border-radius: 20px;
+    border: 3px solid #F3F1F1;
+    color: #36A4FD;
+    background: transparent;
+    font-size: 16px;
+}
+
+
+.button{
+    height: 40px;
+    width: 200px;
+    color: #fff;
+    background: #36A4FD;
+    border-radius: 15px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.row .input-group{
+    flex-basis: 50%;
+}
+
+h1{
+    background: #36A4FD;
+    font-weight: 900;
+    color: aqua;
+}
