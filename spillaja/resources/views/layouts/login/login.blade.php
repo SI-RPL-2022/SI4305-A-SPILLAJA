@@ -6,11 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="css/login_style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Login</title>
 </head>
 <body>
-    <section class="Form my-4 mx-5">
+    <section class="welcome" id="welcome">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <div class="row g-0">
+                    <div class="col-lg-5">
+                        <img src="/images/welcomevector.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-7 px-5 pt-5">
+                        <form action="" class="login-form">
+                            <h3>Masuk</h3>
+                            <input type="email" placeholder="Masukkan Email" class="formbox">
+                            <input type="password" placeholder="Masukkan Kata Sandi" class="formbox">
+                            <p>Belum punya akun? <a href="regis">Daftar Sekarang</a></p>
+                            <a href="beranda" class="btn">Masuk</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    {{-- <section class="Form my-4 mx-5">
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-5">
@@ -48,6 +72,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 </body>
 </html>

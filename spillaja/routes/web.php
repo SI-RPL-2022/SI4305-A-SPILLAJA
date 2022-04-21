@@ -49,3 +49,7 @@ Route::get('riwayat', function () {
 Route::get('perundungan', function () {
     return view('perundungan');
 });
+
+Route::get('ulasan', function () {
+    return view('ulasan');
+});

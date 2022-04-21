@@ -10,7 +10,7 @@
     <div class="content">
         <h3>Selamat Datang <span>#sobatspill</span></h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero nostrum veniam facere tempore nisi.</p>
-        <a href="#" class="btn">Lapor Sekarang</a>
+        <a href="#features" class="btn">Lapor Sekarang</a>
     </div>
 
 </section>
@@ -30,14 +30,14 @@
             <img src="/images/shvector1.png" alt="">
             <h3>Pelecehan Seksual</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href="#" class="btn">Buat Laporan</a>
+            <a href="pelecehan" class="btn">Buat Laporan</a>
         </div>
 
         <div class="box">
             <img src="/images/perundunganvector1.png" alt="">
             <h3>Perundungan</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href="#" class="btn">Buat Laporan</a>
+            <a href="perundungan" class="btn">Buat Laporan</a>
         </div>
 
         <div class="box">

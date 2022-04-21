@@ -23,7 +23,7 @@
     <a href="#" class="logo"> <img src="images/logo.png" style="width: 120px;"></a>
 
     <nav class="navbar">
-        <a href="#home">Beranda</a>
+        <a href="beranda">Beranda</a>
         <a href="#features">Pengaduan</a>
         <a href="#tentang">Tentang</a>
         <a href="#review">Ulasan</a>

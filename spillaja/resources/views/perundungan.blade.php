@@ -1,55 +1,61 @@
 @extends('layouts.main')
-<link rel="stylesheet" href="css/lapor_style.css">
+<link rel="stylesheet" href="css/style.css">
 
 @section('container')
 
-<body>
-    <div class="col-md-7 feeds">
-        <div class="d-flex justify-content-between border-bottom">
-            <strong class="title" style="font-size: 40pt;">Perundungan</strong>
-        </div>
-    
-        <div class="hero">
-            <form action="" class="mt-5">
-                <div class="input-group">
-                    <input type="text" id="" placeholder="Judul Laporan">
-                </div>
-                <div class="row">
-                    <div class="input-group">
-                        <input type="text" id="" placeholder="Provinsi">
-                    </div>
-                    <div class="input-group">
-                        <input type="text" id="" placeholder="Kabupaten / Kota">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-group">
-                        <input type="text" id="" placeholder="Kecamatan">
-                    </div>
-                    <div class="input-group">
-                        <input type="text" id="" placeholder="Kelurahan">
-                    </div>
-                </div>
-                <div class="input-group">
-                    <textarea id="" rows="3" placeholder="Alamat Lengkap"></textarea>
-                </div>
-                <div class="input-group">
-                    <textarea id="" rows="6" placeholder="Tuliskan Peristiwa dengan Lengkap dan Jelas"></textarea>
-                </div>
-                {{-- <div class="input-group">
-                    <input type="checkbox">
-                 </div> --}}
-                <div class="form-row pt-4">
-                    <div class="col-lg-7">
-                        <input class="button" type="submit" value="Kirim">
-                    </div>
-                </div>
-             </form>
-        </div>
-             
-    </div>
-</body>
+<section class="report" id="report">
 
+    <div class="content">
+        <h3>Pengaduan <span>#perundungan</span></h3>
+        <p>Hallo #sobatspill, silahkan isi data laporan dengan lengkap untuk melanjutkan ke proses selanjutnya, Terima Kasih</p>
+        <a href="#formulir" class="btn">Isi Laporan</a>
+    </div>
+
+</section>
     
+<section class="formulir" id="formulir">
+
+    <h1 class="heading"> Formulir Laporan <span>#spillaja</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Perundungan</h3>
+            <form>
+                <div class="row">
+                    <div class="column">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" placeholder="Tuliskan Nama Lengkap">
+                    </div>
+                    <div class="column">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Tuliskan Email Anda">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="subject">Judul Laporan</label>
+                        <input type="text" id="subject" placeholder="Contoh : Laporan Pelecehan Seksual">
+                    </div>
+                    <div class="column">
+                        <label for="contact">Nomor HP</label>
+                        <input type="tel" id="contact" placeholder="Tuliskan Nomor Aktif">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="issue">Peristiwa</label>
+                        <textarea id="issue" placeholder="Tuliskan gambaran peristiwa secara lengkap dan jelas !" rows="5"></textarea>
+                    </div>
+                </div>
+            
+                <a href="ulasan" class="btn">Kirim Laporan</a>
+                
+            </form>
+            
+        </div>
+    </div>
+
+</section>
 
 @endsection
