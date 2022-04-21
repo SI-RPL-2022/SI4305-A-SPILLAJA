@@ -1,0 +1,66 @@
+@font-face {
+    font-family: psb;
+    src: url(Font/Poppins-SemiBold.ttf);
+  }
+
+@font-face {
+    font-family: pr;
+    src: url(Font/Poppins-Regular.ttf);
+  }
+
+@font-face {
+    font-family: qb;
+    src: url(Font/Quicksand-Bold.ttf);
+  }
+
+.left-view {
+    margin-top: 10px;
+    border-right: solid 1px #36A4FD;
+}
+
+.list-group {
+    margin-top: 30%;
+}
+
+.list-group-item {
+    border: none;
+    margin-top: 50px;
+    font-family: pr;
+    color: #36A4FD;
+}
+
+.center-view {
+    margin-top: 10px;
+}
+
+.title {
+    font-family: qb;
+    font-size: 65px;
+    color: #36A4FD;
+    border-bottom: solid 1px #36A4FD;
+}
+
+.riwayat {
+    font-family: pr;
+    color: #36A4FD;
+    border-bottom: solid 1px #36A4FD;
+    align-items: center;
+}
+
+.col-foto {
+    font-size: 25px;
+}
+
+.nav-kanan {
+    margin-top: 30px;
+}
+
+.icon {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search {
+    margin-top: 30px;
+    background-color: #36A4FD;
+}
