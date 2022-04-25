@@ -13,6 +13,20 @@
     <section class="welcome" id="welcome">
 
         <div class="box-container">
+
+            @if(session()->has('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
+
+            @if(session()->has('loginError'))
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    {{ session('loginError') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
     
             <div class="box">
                 <div class="row g-0">
@@ -20,12 +34,19 @@
                         <img src="/images/welcomevector.svg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-7 px-5 pt-5">
-                        <form action="" class="login-form">
-                            <h3>Masuk</h3>
-                            <input type="email" placeholder="Masukkan Email" class="formbox">
-                            <input type="password" placeholder="Masukkan Kata Sandi" class="formbox">
+                        <h3>Masuk</h3>
+                        <form action="login" method="POST" class="login-form">
+                            @csrf
+                            <input type="email" name="email" id="email" placeholder="Masukkan Email" class="formbox" @error('email') is-invalid
+                            @enderror autofocus required value="{{ old ('email') }}">
+                            @error('email')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                            <input type="password" name="password" id="password" placeholder="Masukkan Kata Sandi" class="formbox" required>
                             <p>Belum punya akun? <a href="regis">Daftar Sekarang</a></p>
-                            <a href="beranda" class="btn">Masuk</a>
+                            <button type="submit" class="btn">Masuk</button>
                         </form>
                     </div>
                 </div>

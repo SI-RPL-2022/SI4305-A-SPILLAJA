@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisController;
  
 /*
 |--------------------------------------------------------------------------
@@ -18,13 +20,11 @@ Route::get('/', function () {
     return view('layouts.login.welcome');
 });
 
-Route::get('login', function () {
-    return view('layouts.login.login');
-});
+Route::get('regis', [RegisController::class, 'index']);
+Route::post('regis', [RegisController::class, 'authenticate']);
 
-Route::get('regis', function () {
-    return view('layouts.login.regis');
-});
+Route::get('login', [LoginController::class, 'index']);
+Route::post('login', [LoginController::class, 'authenticate']);
 
 Route::get('main', function () {
     return view('layouts.main');
@@ -52,4 +52,8 @@ Route::get('perundungan', function () {
 
 Route::get('ulasan', function () {
     return view('ulasan');
+});
+
+Route::get('checkout', function () {
+    return view('checkout');
 });

@@ -165,12 +165,21 @@ section{
 .header .login-form{
     position: absolute;
     top:110%; right:-110%;
-    width:35rem;
+    width:18rem;
     box-shadow: var(--box-shadow);
     padding:2rem;
     border-radius: .5rem;
     background: #fff;
     text-align: center;
+}
+.header .login-form ul li{
+    list-style: none;
+    font-size: 16px;
+}
+
+.header .login-form li a{
+    text-decoration: none;
+    color: #130f40;
 }
 
 .header .login-form.active{
@@ -205,6 +214,7 @@ section{
     color:var(--blue);
     text-decoration: underline;
 }
+/* batas */
 
 /* batas */
 .formulir .box-container{
@@ -550,6 +560,58 @@ section{
     color:var(--blue);
 }
 
+/* batas */
+
+.bill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/images/checkoutbackground.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+}
+
+.bill .content{
+    text-align: center;
+    width:60rem;
+}
+
+.bill .content h3{
+    color:var(--black);
+    font-size: 3rem;
+}
+
+.bill .content h3 span{
+    color:var(--blue);
+}
+
+.bill .content p{
+    color:var(--light-color);
+    font-size: 1.7rem;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+.bank table {
+    margin-top: 5px;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.bank th, td {
+    background: white;
+}
+
+.bank th:hover {
+  box-shadow:2px 0px 10px 0px #F4F4F4;
+  border: 1px solid #68a2ff;
+}
+.bank th{
+  border: 1px solid #F4F4F4;
+}
 
 /* media queries  */
 

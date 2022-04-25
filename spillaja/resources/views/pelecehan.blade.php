@@ -48,9 +48,9 @@
                         <textarea id="issue" placeholder="Tuliskan gambaran peristiwa secara lengkap dan jelas !" rows="5"></textarea>
                     </div>
                 </div>
-            
+                <p>Klik Kirim Laporan, anda setuju dengan <a href="">syarat & ketentuan kami </a>,dan <a href="">kebijakan privasi</a></p>
                 <a href="ulasan" class="btn">Kirim Laporan</a>
-                
+        
             </form>
             
         </div>

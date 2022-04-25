@@ -22,11 +22,11 @@
                     <div class="col-lg-7 px-5 pt-5">
                         <form action="" class="login-form">
                             <h3>Daftar</h3>
-                            <input type="text" placeholder="Masukkan Nama" class="formbox">
-                            <input type="email" placeholder="Masukkan Email" class="formbox">
-                            <input type="password" placeholder="Buat Kata Sandi" class="formbox">
+                            <input type="text" name="nama" id="nama" placeholder="Masukkan Nama" class="formbox">
+                            <input type="email" name="email" id="email" placeholder="Masukkan Email" class="formbox">
+                            <input type="password" name="password" id="password" placeholder="Buat Kata Sandi" class="formbox">
                             <p>Sudah punya akun? <a href="login">Masuk Sekarang</a></p>
-                            <a href="login" class="btn">Daftar</a>
+                            <Button href="login" type="submit" class="btn">Daftar</Button>
                         </form>
                     </div>
                 </div>

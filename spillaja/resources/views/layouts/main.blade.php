@@ -10,6 +10,7 @@
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
@@ -33,14 +34,14 @@
         <div class="fas fa-user" id="login-btn"></div>
     </div>
 
-    <form action="" class="login-form">
-        <h3>login now</h3>
-        <input type="email" placeholder="your email" class="box">
-        <input type="password" placeholder="your password" class="box">
-        <p>forget your password <a href="#">click here</a></p>
-        <p>don't have an account <a href="#">create now</a></p>
-        <input type="submit" value="login now" class="btn">
-    </form>
+    <div action="" class="login-form">
+        <ul>
+            <li><a href="">Profil</a></li>
+            <li><a href="">Riwayat</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Keluar</a></li>
+        </ul>
+    </div>
 
 </header>
 
@@ -97,3 +98,4 @@
 
 </body>
 </html>
+
