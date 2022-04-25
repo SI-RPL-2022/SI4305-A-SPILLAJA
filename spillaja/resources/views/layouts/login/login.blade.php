@@ -20,12 +20,14 @@
                         <img src="/images/welcomevector.svg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-7 px-5 pt-5">
-                        <form action="" class="login-form">
+                        <form action="{{ route('authLogin') }}" class="login-form" method="POST">
+                            @csrf
                             <h3>Masuk</h3>
-                            <input type="email" placeholder="Masukkan Email" class="formbox">
-                            <input type="password" placeholder="Masukkan Kata Sandi" class="formbox">
+                            <input type="email" name="email" placeholder="Masukkan Email" class="formbox" required>
+                            <input type="password" name="password" placeholder="Masukkan Kata Sandi" class="formbox" required>
                             <p>Belum punya akun? <a href="regis">Daftar Sekarang</a></p>
-                            <a href="beranda" class="btn">Masuk</a>
+                            <button type="submit" class="btn">Masuk</button>
+                           
                         </form>
                     </div>
                 </div>

@@ -1,42 +1,55 @@
 @extends('layouts.main')
-<link rel="stylesheet" href="css/main_style.css">
+<link rel="stylesheet" href="css/style.css">
 
 @section('container')
 
-<div class="col-md-7 feeds">
-    <div class="d-flex justify-content-between">
-        <strong class="title" style="font-size: 55pt;">Riwayat Laporan</strong>
+<section class="report" id="report">
+
+    <div class="content">
+        <h3>Pengaduan <span>#perundungan</span></h3>
+        <p>Hallo #sobatspill, silahkan isi data laporan dengan lengkap untuk melanjutkan ke proses selanjutnya, Terima Kasih</p>
+        <a href="#formulir" class="btn">Isi Laporan</a>
     </div>
 
-    <div class="posting py-3 px-3 border-bottom">
-    </div>
+</section>
+    
+<section class="formulir" id="formulir">
 
-    <div class="feed-items py-3 px-3 border-bottom">
-        <div class="d-flex w-100">
-            <div class="content-kiri" style="margin-left: 15px;">
-                <strong>Pelecehan Seksual</strong>
-                <div class="rsu">
-                    <small>03/04/2022</small>
+    <h1 class="heading"> Riwayat Laporan <span>#spillaja</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="row riwayat">
+                <div class="col info-judul">
+                    <p class="judul-riwayat" >Pelecehan Seksual</p>
+                    <p>03/04/2022</p>
+                </div>
+                <div class="col tombol-lihat">
+                    <button type="button" class="btn btn-primary">Lihat</button>
                 </div>
             </div>
-            <div class="konsul" style="padding-top: 10px;padding-left: 700px;">
-                <button class="btn button-lihat btn-primary">Lihat</button>
+            <div class="row riwayat">
+                <div class="col info-judul">
+                    <p class="judul-riwayat" >Pelecehan Seksual</p>
+                    <p>03/04/2022</p>
+                </div>
+                <div class="col tombol-lihat">
+                    <button type="button" class="btn btn-primary">Lihat</button>
+                </div>
+            </div>
+            <div class="row riwayat">
+                <div class="col info-judul">
+                    <p class="judul-riwayat" >Pelecehan Seksual</p>
+                    <p>03/04/2022</p>
+                </div>
+                <div class="col tombol-lihat">
+                    <button type="button" class="btn btn-primary">Lihat</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="feed-items py-3 px-3 border-bottom">
-        <div class="d-flex w-100">
-            <div class="content-kiri" style="margin-left: 15px;">
-                <strong>Intimidasi</strong>
-                <div class="rsu">
-                    <small>29/12/2021</small>
-                </div>
-            </div>
-            <div class="konsul" style="padding-top: 10px; padding-left: 762px;">
-                <button class="btn btn-primary button-lihat">Lihat</button>
-            </div>
-        </div>
-    </div>
-</div>
+
+</section>
 
 @endsection

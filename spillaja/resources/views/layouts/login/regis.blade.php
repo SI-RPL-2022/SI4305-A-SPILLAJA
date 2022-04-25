@@ -20,13 +20,15 @@
                         <img src="/images/welcomevector.svg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-7 px-5 pt-5">
-                        <form action="" class="login-form">
+                        <form action="{{ route('register') }}" class="login-form" method="POST">
+                            {{ csrf_field() }}
                             <h3>Daftar</h3>
-                            <input type="text" placeholder="Masukkan Nama" class="formbox">
-                            <input type="email" placeholder="Masukkan Email" class="formbox">
-                            <input type="password" placeholder="Buat Kata Sandi" class="formbox">
+                            <input type="text" placeholder="Masukkan Nama" name="name" class="formbox" required>
+                            <input type="email" placeholder="Masukkan Email" name="email" class="formbox"  required>
+                            <input type="password" placeholder="Buat Kata Sandi" name="password" class="formbox"  required>
+                      
                             <p>Sudah punya akun? <a href="login">Masuk Sekarang</a></p>
-                            <a href="login" class="btn">Daftar</a>
+                            <button type="submit" class="btn">Daftar</button>
                         </form>
                     </div>
                 </div>

@@ -550,6 +550,33 @@ section{
     color:var(--blue);
 }
 
+.riwayat {
+    align-items: center;
+}
+
+.tombol-lihat {
+    text-align: right;
+}
+
+.judul-riwayat {
+    font-size: 15pt;
+}
+
+.fotokm{
+    align-items: center;
+}
+
+#namadok {
+    font-size: 30px;
+}
+
+.km{
+    align-items: center;
+}
+
+.pesankm {
+    text-align: right;
+}
 
 /* media queries  */
 

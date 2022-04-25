@@ -21,35 +21,35 @@
 
         <div class="box">
             <h3>Perundungan</h3>
-            <form>
+            <form action="{{ route('insert_perundungan') }}"  method="POST">
+                {{ csrf_field() }}
                 <div class="row">
                     <div class="column">
                         <label for="name">Nama</label>
-                        <input type="text" id="name" placeholder="Tuliskan Nama Lengkap">
+                        <input type="text" name="nama" id="name" placeholder="Tuliskan Nama Lengkap">
                     </div>
                     <div class="column">
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Tuliskan Email Anda">
+                        <input type="email" name="email" id="email" placeholder="Tuliskan Email Anda">
                     </div>
                 </div>
                 <div class="row">
                     <div class="column">
                         <label for="subject">Judul Laporan</label>
-                        <input type="text" id="subject" placeholder="Contoh : Laporan Pelecehan Seksual">
+                        <input type="text" name="judul"id="subject" placeholder="Contoh : Laporan Pelecehan Seksual">
                     </div>
                     <div class="column">
                         <label for="contact">Nomor HP</label>
-                        <input type="tel" id="contact" placeholder="Tuliskan Nomor Aktif">
+                        <input type="number" name="nomor" id="contact" placeholder="Tuliskan Nomor Aktif" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="column">
                         <label for="issue">Peristiwa</label>
-                        <textarea id="issue" placeholder="Tuliskan gambaran peristiwa secara lengkap dan jelas !" rows="5"></textarea>
+                        <textarea id="issue" name="peristiwa" placeholder="Tuliskan gambaran peristiwa secara lengkap dan jelas !" rows="5"></textarea>
                     </div>
                 </div>
-            
-                <a href="ulasan" class="btn">Kirim Laporan</a>
+                <button type="submit" class="btn">Kirim Laporan</button>
                 
             </form>
             
