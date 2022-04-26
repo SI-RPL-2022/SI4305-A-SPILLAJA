@@ -20,33 +20,20 @@
     <div class="box-container">
 
         <div class="box">
+        @foreach ($pelecehan as $row)
+                
+           
             <div class="row riwayat">
                 <div class="col info-judul">
-                    <p class="judul-riwayat" >Pelecehan Seksual</p>
-                    <p>03/04/2022</p>
+                    <h2 class="judul-riwayat" >{{ $row->judul }}</h2>
+                    <p>{{ $row->created_at }}</p>
                 </div>
                 <div class="col tombol-lihat">
-                    <button type="button" class="btn btn-primary">Lihat</button>
+                    <a href="{{ route('driwayat',['id' => $row->id ])}}"> <button type="button" class="btn btn-primary">Lihat </button></a>
                 </div>
             </div>
-            <div class="row riwayat">
-                <div class="col info-judul">
-                    <p class="judul-riwayat" >Pelecehan Seksual</p>
-                    <p>03/04/2022</p>
-                </div>
-                <div class="col tombol-lihat">
-                    <button type="button" class="btn btn-primary">Lihat</button>
-                </div>
-            </div>
-            <div class="row riwayat">
-                <div class="col info-judul">
-                    <p class="judul-riwayat" >Pelecehan Seksual</p>
-                    <p>03/04/2022</p>
-                </div>
-                <div class="col tombol-lihat">
-                    <button type="button" class="btn btn-primary">Lihat</button>
-                </div>
-            </div>
+        @endforeach
+          
         </div>
     </div>
 

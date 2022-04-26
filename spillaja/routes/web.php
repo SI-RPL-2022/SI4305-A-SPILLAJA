@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PelecehanController;
 use App\Http\Controllers\PerundunganController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\RiwayatController;
  
 /*
 |--------------------------------------------------------------------------
@@ -34,23 +35,25 @@ Route::post('insert_pelecehan', [PelecehanController::class, 'store'])->name('in
 Route::get('perundungan', [PerundunganController::class, 'index'])->name('perundungan');
 Route::post('insert_perundungan', [PerundunganController::class, 'store'])->name('insert_perundungan');
 
+Route::get('riwayat', [RiwayatController::class, 'index'])->name('riwayat');
+Route::get('driwayat/{id}', [RiwayatController::class, 'show'])->name('driwayat');;
+
 Route::get('main', function () {
     return view('layouts.main');
 });
 
 Route::get('beranda', function () {
     return view('beranda');
-});
+})->name('beranda');
 
 Route::get('km', function () {
     return view('km');
 });
 
-Route::get('riwayat', function () {
-    return view('riwayat');
-});
-
-
 Route::get('ulasan', function () {
     return view('ulasan');
+});
+
+Route::get('checkout', function () {
+    return view('checkout');
 });

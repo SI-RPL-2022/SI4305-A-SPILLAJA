@@ -13,6 +13,20 @@
     <section class="welcome" id="welcome">
 
         <div class="box-container">
+
+            @if(session()->has('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
+
+            @if(session()->has('loginError'))
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    {{ session('loginError') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
     
             <div class="box">
                 <div class="row g-0">
@@ -23,7 +37,13 @@
                         <form action="{{ route('authLogin') }}" class="login-form" method="POST">
                             @csrf
                             <h3>Masuk</h3>
-                            <input type="email" name="email" placeholder="Masukkan Email" class="formbox" required>
+                            <input type="email" name="email" id="email" placeholder="Masukkan Email" class="formbox" required @error('email') is-invalid
+                            @enderror autofocus required value="{{ old ('email') }}">
+                            @error('email')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                             <input type="password" name="password" placeholder="Masukkan Kata Sandi" class="formbox" required>
                             <p>Belum punya akun? <a href="regis">Daftar Sekarang</a></p>
                             <button type="submit" class="btn">Masuk</button>

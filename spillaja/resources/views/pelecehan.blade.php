@@ -26,29 +26,30 @@
                 <div class="row">
                     <div class="column">
                         <label for="name">Nama</label>
-                        <input type="text" name="nama" id="name" placeholder="Tuliskan Nama Lengkap">
+                        <input type="text" name="nama" id="name" placeholder="Tuliskan Nama Lengkap" required>
                     </div>
                     <div class="column">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Tuliskan Email Anda">
+                        <input type="email" name="email" id="email" placeholder="Tuliskan Email Anda" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="column">
                         <label for="subject">Judul Laporan</label>
-                        <input type="text" name="judul"id="subject" placeholder="Contoh : Laporan Pelecehan Seksual">
+                        <input type="text" name="judul"id="subject" placeholder="Contoh : Laporan Pelecehan Seksual" required>
                     </div>
                     <div class="column">
                         <label for="contact">Nomor HP</label>
-                        <input type="tel" name="nomor" id="contact" placeholder="Tuliskan Nomor Aktif">
+                        <input type="number" name="nomor" id="contact" placeholder="Tuliskan Nomor Aktif" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="column">
                         <label for="issue">Peristiwa</label>
-                        <textarea id="issue" name="peristiwa" placeholder="Tuliskan gambaran peristiwa secara lengkap dan jelas !" rows="5"></textarea>
+                        <textarea id="issue" name="peristiwa" placeholder="Tuliskan gambaran peristiwa secara lengkap dan jelas !" rows="5" required></textarea>
                     </div>
                 </div>
+                <p>Klik Kirim Laporan, anda setuju dengan <a href="">syarat & ketentuan kami </a>,dan <a href="">kebijakan privasi</a></p>
                 <button type="submit" class="btn">Kirim Laporan</button>
                 
             </form>
