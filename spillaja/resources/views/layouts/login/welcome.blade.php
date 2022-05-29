@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Welcome~Spill Aja</title>
 </head>
+
 <body>
 
     <section class="welcome" id="welcome">
 
         <div class="box-container">
-    
+
             <div class="box">
                 <div class="row g-0">
                     <div class="col-lg-5">
@@ -25,17 +28,17 @@
                             <h3>Selamat Datang</h3>
                             <p>Silahkan masuk untuk dapat mengakses semua fitur !</p>
                             <div class="pt-5">
-                                <a href="login" class="btn">Masuk</a>
+                                <a href="/Login" class="btn">Masuk</a>
                             </div>
                             <div class="pt-1">
-                                <a href="regis" class="btn">Daftar</a>
+                                <a href="/Register" class="btn">Daftar</a>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    
+
     </section>
 
 
@@ -69,4 +72,5 @@
         </div>
     </section> --}}
 </body>
+
 </html>

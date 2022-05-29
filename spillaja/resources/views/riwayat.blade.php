@@ -3,37 +3,33 @@
 
 @section('container')
 
-<section class="report" id="report">
-
-    <div class="content">
-        <h3>Pengaduan <span>#perundungan</span></h3>
-        <p>Hallo #sobatspill, silahkan isi data laporan dengan lengkap untuk melanjutkan ke proses selanjutnya, Terima Kasih</p>
-        <a href="#formulir" class="btn">Isi Laporan</a>
-    </div>
-
-</section>
-    
 <section class="formulir" id="formulir">
 
     <h1 class="heading"> Riwayat Laporan <span>#spillaja</span> </h1>
 
-    <div class="box-container">
+    <div class="container">
 
-        <div class="box">
-        @foreach ($pelecehan as $row)
-                
-           
-            <div class="row riwayat">
-                <div class="col info-judul">
-                    <h2 class="judul-riwayat" >{{ $row->judul }}</h2>
-                    <p>{{ $row->created_at }}</p>
-                </div>
-                <div class="col tombol-lihat">
-                    <a href="{{ route('driwayat',['id' => $row->id ])}}"> <button type="button" class="btn btn-primary">Lihat </button></a>
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="career-search mb-60">
+
+                    <div class="filter-result">
+                        <div class="job-box d-md-flex align-items-center justify-content-between mb-30">
+                            <div class="job-left my-4 d-md-flex flex-wrap">
+                                <div class="riwayat-content">
+                                    <h5 class="text-center text-md-left">Front End Developer</h5>
+                                    <p>1 Januari 2022</p>
+                                </div>
+                            </div>
+                            <div class="job-right my-4 flex-shrink-0">
+                                <a href="/Riwayat-Detail"
+                                    class="btn d-block w-100 d-sm-inline-block btn-primary">Lihat</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        @endforeach
-          
         </div>
     </div>
 

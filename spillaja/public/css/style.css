@@ -165,21 +165,12 @@ section{
 .header .login-form{
     position: absolute;
     top:110%; right:-110%;
-    width:18rem;
+    width:35rem;
     box-shadow: var(--box-shadow);
     padding:2rem;
     border-radius: .5rem;
     background: #fff;
     text-align: center;
-}
-.header .login-form ul li{
-    list-style: none;
-    font-size: 16px;
-}
-
-.header .login-form li a{
-    text-decoration: none;
-    color: #130f40;
 }
 
 .header .login-form.active{
@@ -210,13 +201,32 @@ section{
     color:var(--light-color);
 }
 
-.header .login-form p a{
-    color:var(--blue);
-    text-decoration: underline;
+.punya-akun {
+    margin-top: 20px;
 }
-/* batas */
+
+.baris-daftar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formbox {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /* batas */
+
+.formulir {
+    margin-top: 80px;
+}
+
+.toggle-riwayat-logout {
+    text-align: left;
+    font-size: 15px;
+}
+
 .formulir .box-container{
     padding:3rem 2rem;
     background: #fff;
@@ -274,11 +284,7 @@ section{
 
 /* batas */
 
-/* Riwayat */
-.info-judul{
-    margin-top: 1rem;
-}
-/* Riwayat */
+
 
 /* batas */
 .home{
@@ -564,58 +570,78 @@ section{
     color:var(--blue);
 }
 
-/* batas */
-
-.bill{
-    display: flex;
+.riwayat {
     align-items: center;
-    justify-content: center;
-    background: url(/images/checkoutbackground.png) no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 20rem;
-    padding-bottom: 10rem;
 }
 
-.bill .content{
-    text-align: center;
-    width:60rem;
+.tombol-lihat {
+    text-align: right;
 }
 
-.bill .content h3{
-    color:var(--black);
-    font-size: 3rem;
+.judul-riwayat {
+    font-size: 15pt;
 }
 
-.bill .content h3 span{
-    color:var(--blue);
+.fotokm{
+    align-items: center;
 }
 
-.bill .content p{
-    color:var(--light-color);
-    font-size: 1.7rem;
-    padding:1rem 0;
-    line-height: 1.8;
+#namadok {
+    font-size: 30px;
 }
 
-.bank table {
-    margin-top: 5px;
-    border-collapse: collapse;
-    width: 100%;
-    border: 1px solid #ddd;
+.km{
+    align-items: center;
 }
 
-.bank th, td {
-    background: white;
+.pesankm {
+    text-align: right;
 }
 
-.bank th:hover {
-  box-shadow:2px 0px 10px 0px #F4F4F4;
-  border: 1px solid #68a2ff;
-}
-.bank th{
-  border: 1px solid #F4F4F4;
-}
+/* CSS KM */
+
+.filter-result .job-box {
+    -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+            box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+    border-radius: 10px;
+    padding: 10px 35px;
+  }
+  
+  .job-box .img-holder {
+    height: 65px;
+    width: 65px;
+    background-color: #4e63d7;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(78, 99, 215, 0.9)), to(#5a85dd));
+    background-image: linear-gradient(to right, rgba(78, 99, 215, 0.9) 0%, #5a85dd 100%);
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 65px;
+  }
+  
+  .job-content {
+      margin-left: 20px;
+  }
+
+  .riwayat-content {
+      margin-left: 20px;
+  }
+  
+  .mb-30 {
+      margin-bottom: 30px;
+  }
+
+/* CSS KM */
 
 /* media queries  */
 

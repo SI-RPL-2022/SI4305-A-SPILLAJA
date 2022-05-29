@@ -1,12 +1,8 @@
 <?php
 
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\authentication_Controller;
+use App\Http\Controllers\main_Controller;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\PelecehanController;
-use App\Http\Controllers\PerundunganController;
-use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\RiwayatController;
  
 /*
 |--------------------------------------------------------------------------
@@ -20,40 +16,36 @@ use App\Http\Controllers\RiwayatController;
 */
 
 
+// Login & Register
+Route::get('/', [authentication_Controller::class, 'index']);
+Route::get('/Register', [authentication_Controller::class, 'register']);
+Route::post('/Register', [authentication_Controller::class, 'store']);
+Route::get('/Login', [authentication_Controller::class, 'login']);
+Route::post('/Login', [authentication_Controller::class, 'authenticate']);
+Route::post('/Logout', [authentication_Controller::class, 'logout']);
 
-Route::get('home', [HomeController::class, 'index'])->name('home')->middleware('auth');
-Route::get('login', [LoginController::class, 'index'])->name('login');
-Route::post('postlogin' ,[LoginController::class, 'login'])->name('authLogin');
-Route::get('logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
+// Main
+Route::get('/Beranda', [main_Controller::class, 'index']);
+Route::get('/Pelecehan', [main_Controller::class, 'pelecehan']);
+Route::post('/Pelecehan', [main_Controller::class, 'store_pelecehan_seksual']);
+Route::get('/Perundungan', [main_Controller::class, 'perundungan']);
+Route::post('/Perundungan', [main_Controller::class, 'store_bullying']);
+Route::get('/Riwayat', [main_Controller::class, 'riwayat']);
+Route::get('/Riwayat-Detail', [main_Controller::class, 'riwayatDetail']);
 
-Route::get('regis', [RegisterController::class, 'index'])->name('regis');
-Route::post('register' ,[RegisterController::class, 'register'])->name('register');
-
-Route::get('pelecehan', [PelecehanController::class, 'index'])->name('pelecehan');
-Route::post('insert_pelecehan', [PelecehanController::class, 'store'])->name('insert_pelecehan');
-
-Route::get('perundungan', [PerundunganController::class, 'index'])->name('perundungan');
-Route::post('insert_perundungan', [PerundunganController::class, 'store'])->name('insert_perundungan');
-
-Route::get('riwayat', [RiwayatController::class, 'index'])->name('riwayat');
-Route::get('driwayat/{id}', [RiwayatController::class, 'show'])->name('driwayat');;
-
-Route::get('main', function () {
-    return view('layouts.main');
-});
-
-Route::get('beranda', function () {
-    return view('beranda');
-})->name('beranda');
 
 Route::get('km', function () {
     return view('km');
 });
 
-Route::get('ulasan', function () {
-    return view('ulasan');
+Route::get('riwayat', function () {
+    return view('riwayat');
 });
 
-Route::get('checkout', function () {
-    return view('checkout');
+Route::get('perundungan', function () {
+    return view('perundungan');
+});
+
+Route::get('ulasan', function () {
+    return view('ulasan');
 });

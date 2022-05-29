@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="css/style.css">
 
 @section('container')
-
+    
 <section class="formulir" id="formulir">
 
     <h1 class="heading"> Formulir Laporan <span>#spillaja</span> </h1>
@@ -11,56 +11,50 @@
 
         <div class="box">
             <h3>Pelecehan Seksual</h3>
-            <form action="/Pelecehan" method="POST">
-                @csrf
-                <input type="hidden" value="{{ auth()->user()->id }}" name="user_id">
+            <form>
                 <div class="row">
                     <div class="col">
                         <label for="name">Nama Korban</label>
-                        <input type="text" id="" placeholder="Tuliskan Nama Lengkap" name="nama_korban">
+                        <p>Asep Kurniawan</p>
                     </div>
                     <div class="col">
                         <label for="email">Tempat/Tanggal Lahir</label>
-                        <input type="text" id="" placeholder="Contoh : Kota, 01 Mei 2000" name="ttl">
+                        <p>Medan, 21 Desember 2005</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label for="subject">Agama</label>
-                        <input type="text" id="" placeholder="Tuliskan Agama" name="agama">
+                        <p>Islam</p>
                     </div>
                     <div class="col">
                         <label for="contact">Alamat</label>
-                        <input type="text" id="" placeholder="Tuliskan Alamat Tinggal" name="alamat">
+                        <p>Jalan Karya Ujung Eka Selamat Nomor 5</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label for="subject">Nama Pelaku</label>
-                        <input type="text" id="" placeholder="Tuliskan Nama Pelaku" name="nama_pelaku">
+                        <p>Mega Surito</p>
                     </div>
                     <div class="col">
                         <label for="contact">Tanggal Kejadian</label>
-                        <input type="date" id="" name="tanggal_kejadian">
+                        <p>7 Desember 2022</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label for="">Judul Laporan</label>
-                        <textarea id="" placeholder="contoh : dugaan pelecehan seksual kepada anak di bawah umur"
-                            rows="5" name="judul_laporan"></textarea>
+                        <p>Dugaan Pelecehan seksual dibawah umur oleh oknum guru di SDN 001</p>
                     </div>
                     <div class="col">
                         <label for="">Alamat Kejadian</label>
-                        <textarea id="" placeholder="Tuliskan Alamat Kejadian Perkara" rows="5"
-                            name="alamat_kejadian"></textarea>
+                        <p>SDN 001 jalan utama no 02</p>
                     </div>
-                </div>
-
-                <button type="submit" class="btn kirim-laporan">Kirim Laporan</button>
-
+                </div> 
+                
             </form>
-
+            
         </div>
     </div>
 
