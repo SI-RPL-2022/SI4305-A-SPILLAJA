@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\pelaporan_Bullying;
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Models\pelaporan_Bullying;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -29,12 +30,28 @@ class main_Controller extends Controller
 
     public function riwayat()
     {
-        return view('riwayat');
+        $user = Auth::user();
+        $id = $user->id;
+        $data1 = DB::table('pelaporan_pelecehan_seksuals')->where('user_id', '=', $id)->get();
+        $data2 = DB::table('pelaporan__bullyings')->where('user_id', '=', $id)->get();
+
+        return view('riwayat', compact('data1', 'data2'));
     }
 
-    public function riwayatDetail()
+    public function riwayatDetail_pelecehan(Request $request)
     {
-        return view('riwayatdetail');
+        $id = $request->get('id_pelaporan');
+        $data = pelaporan_pelecehanSeksual::find($id);
+
+        return view('riwayatdetail_pelecehan', compact('data'));
+    }
+
+    public function riwayatDetail_perundungan(Request $request)
+    {
+        $id = $request->get('id_pelaporan');
+        $data = pelaporan_Bullying::find($id);
+
+        return view('riwayatdetail_perundungan', compact('data'));
     }
 
     public function store_pelecehan_seksual(Request $request)

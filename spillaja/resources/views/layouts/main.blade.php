@@ -31,9 +31,9 @@
 
         <nav class="navbar">
             <a style="text-decoration:none" href="/Beranda">Beranda</a>
-            <a style="text-decoration:none" href="#features">Pengaduan</a>
-            <a style="text-decoration:none" href="#tentang">Tentang</a>
-            <a style="text-decoration:none" href="#review">Ulasan</a>
+            <a style="text-decoration:none" href="/Beranda#features">Pengaduan</a>
+            <a style="text-decoration:none" href="/Beranda#tentang">Tentang</a>
+            <a style="text-decoration:none" href="/Beranda#review">Ulasan</a>
         </nav>
 
         <div class="icons">

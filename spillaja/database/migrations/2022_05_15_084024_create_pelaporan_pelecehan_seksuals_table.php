@@ -25,6 +25,7 @@ return new class extends Migration
             $table->date('tanggal_kejadian');
             $table->string('judul_laporan');
             $table->string('alamat_kejadian');
+            $table->timestamp('created_at')->useCurrent();
         });
     }
 

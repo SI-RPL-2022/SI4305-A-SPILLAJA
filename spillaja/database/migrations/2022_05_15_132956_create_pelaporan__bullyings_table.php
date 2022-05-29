@@ -29,6 +29,7 @@ return new class extends Migration
             $table->string('perkara');
             $table->string('saksi');
             $table->string('kerugian');
+            $table->timestamp('created_at')->useCurrent();
         });
     }
 

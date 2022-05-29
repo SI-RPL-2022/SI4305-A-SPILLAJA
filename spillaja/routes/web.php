@@ -31,7 +31,8 @@ Route::post('/Pelecehan', [main_Controller::class, 'store_pelecehan_seksual']);
 Route::get('/Perundungan', [main_Controller::class, 'perundungan']);
 Route::post('/Perundungan', [main_Controller::class, 'store_bullying']);
 Route::get('/Riwayat', [main_Controller::class, 'riwayat']);
-Route::get('/Riwayat-Detail', [main_Controller::class, 'riwayatDetail']);
+Route::get('/Riwayat-Detail-Pelecehan', [main_Controller::class, 'riwayatDetail_pelecehan']);
+Route::get('/Riwayat-Detail-Perundungan', [main_Controller::class, 'riwayatDetail_perundungan']);
 
 
 Route::get('km', function () {
