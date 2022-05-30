@@ -53,7 +53,7 @@ class authentication_Controller extends Controller
         if(Auth::attempt($credentials)) {
             if (auth()->user()->is_admin == 1) {
                 $request->session()->regenerate();
-                return redirect()->intended('/HomeAdmin');
+                return redirect()->intended('/Beranda-Admin');
             } elseif (auth()->user()->is_dokter == 1) {
                 $request->session()->regenerate();
                 return redirect()->intended('/HomeAdmin');

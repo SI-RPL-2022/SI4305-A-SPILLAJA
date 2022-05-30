@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use RealRashid\SweetAlert\Facades\Alert;
 use App\Models\pelaporan_pelecehanSeksual;
+use App\Models\psikiater;
 
 class main_Controller extends Controller
 {
@@ -52,6 +53,13 @@ class main_Controller extends Controller
         $data = pelaporan_Bullying::find($id);
 
         return view('riwayatdetail_perundungan', compact('data'));
+    }
+
+    public function kesehatan_mental()
+    {
+        $data = psikiater::all();
+
+        return view('km', compact('data'));
     }
 
     public function store_pelecehan_seksual(Request $request)

@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\authentication_Controller;
-use App\Http\Controllers\main_Controller;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\main_Controller;
+use App\Http\Controllers\admin_controller;
+use App\Http\Controllers\authentication_Controller;
  
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,11 @@ Route::post('/Perundungan', [main_Controller::class, 'store_bullying']);
 Route::get('/Riwayat', [main_Controller::class, 'riwayat']);
 Route::get('/Riwayat-Detail-Pelecehan', [main_Controller::class, 'riwayatDetail_pelecehan']);
 Route::get('/Riwayat-Detail-Perundungan', [main_Controller::class, 'riwayatDetail_perundungan']);
+Route::get('/Kesehatan-Mental', [main_Controller::class, 'kesehatan_mental']);
+
+// Admin
+Route::get('/Beranda-Admin', [admin_controller::class, 'index'])->middleware('is_admin');
+Route::post('/Beranda-Admin', [admin_controller::class, 'regis_psikiater'])->middleware('is_admin');
 
 
 Route::get('km', function () {

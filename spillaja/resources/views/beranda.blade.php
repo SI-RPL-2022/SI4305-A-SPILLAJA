@@ -44,7 +44,7 @@
             <img src="/images/mentalvector1.png" alt="">
             <h3>Kesehatan Mental</h3>
             <p>Konsultasi kesehatan mental dengan dokter yang berpengalaman dan profesional</p>
-            <a href="#" class="btn">Buat Laporan</a>
+            <a href="/Kesehatan-Mental" class="btn">Konsultasi</a>
         </div>
 
     </div>
