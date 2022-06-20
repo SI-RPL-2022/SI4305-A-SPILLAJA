@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artikel;
+use Illuminate\Support\Str;
+use App\Models\Resep_Dokter;
 use Illuminate\Http\Request;
 use App\Models\pelaporan_Bullying;
 use Illuminate\Support\Facades\DB;
@@ -24,6 +27,29 @@ class dokter_controller extends Controller
     public function perundungan_dokter()
     {
         return view('dokter.perundungandokter');
+    }
+    
+    public function resep_dokter()
+    {
+        return view('dokter.resepdokter');
+    }
+    
+    public function berita_dokter()
+    {
+        $artikels = DB::table('artikels')->get();
+        return view('dokter.halamanberita', compact('artikels'));
+    }
+    
+    public function artikel_dokter()
+    {
+        return view('dokter.buatartikel');
+    }
+    
+    public function detailartikel_dokter(Request $request)
+    {
+        $id = $request->get('id');
+        $data = Artikel::find($id);
+        return view('dokter.detailartikel', compact('data'));
     }
     
     public function riwayat_dokter()
@@ -98,5 +124,39 @@ class dokter_controller extends Controller
 
         // dd($validatedData);
 
+    }
+
+    public function store_resep(Request $request)
+    {
+        $validatedData = $request->validate([
+            'nama_dokter' => 'required',
+            'nama_pasien' => 'required',
+            'umur' => 'required',
+            'tanggal' => 'required',
+            'nama_obat' => 'required'
+        ]);
+
+        Resep_Dokter::create($validatedData);
+        Alert::success('Resep Berhasil Dibuat', 'Silahkan cek kembali apakah resep yang ditulis sudah benar');
+        return redirect('/Resep-Dokter');
+    }
+
+    public function store_artikel(Request $request)
+    {
+        $validatedData = $request->validate([
+            'judul_artikel' => 'required',
+            'tanggal' => 'required',
+            'penulis' => 'required',
+            'gambar' => 'image|file|required',
+            'isi_artikel' => 'required'
+        ]);
+
+        if ($request->file('gambar')) {
+            $validatedData['gambar'] = $request->file('gambar')->store('gambar-artikel');
+        }
+
+        Artikel::create($validatedData);
+        Alert::success('Artikel Berhasil Dibuat', 'Silahkan cek artikel yang sudah anda buat');
+        return redirect('/Artikel-Dokter');
     }
 }

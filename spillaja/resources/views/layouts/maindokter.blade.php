@@ -31,8 +31,8 @@
 
         <nav class="navbar">
             <a href="/Beranda-Dokter">Beranda</a>
-            <a href="/Beranda-Dokter#features">Artikel</a>
-            <a href=/Beranda-Dokter#tentang">Resep</a>
+            <a href="/Berita-Dokter">Artikel</a>
+            <a href="/Resep-Dokter">Resep</a>
             <a href="/Riwayat-Dokter">Riwayat</a>
         </nav>
 

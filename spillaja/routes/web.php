@@ -50,6 +50,12 @@ Route::post('/Perundungan-Dokter', [dokter_controller::class, 'store_bullying'])
 Route::get('/Riwayat-Dokter', [dokter_controller::class, 'riwayat_dokter'])->middleware('is_dokter');
 Route::get('/Riwayat-Detail-Perundungan-Dokter', [dokter_controller::class, 'riwayatDetailDokter_perundungan'])->middleware('is_dokter');
 Route::get('/Riwayat-Detail-Pelecehan-Dokter', [dokter_controller::class, 'riwayatDetailDokter_pelecehan'])->middleware('is_dokter');
+Route::get('/Resep-Dokter', [dokter_controller::class, 'resep_dokter'])->middleware('is_dokter');
+Route::post('/Resep-Dokter', [dokter_controller::class, 'store_resep'])->middleware('is_dokter');
+Route::get('/Berita-Dokter', [dokter_controller::class, 'berita_dokter'])->middleware('is_dokter');
+Route::get('/Artikel-Dokter', [dokter_controller::class, 'artikel_dokter'])->middleware('is_dokter');
+Route::post('/Artikel-Dokter', [dokter_controller::class, 'store_artikel'])->middleware('is_dokter');
+Route::get('/Artikel-Detail-Dokter', [dokter_controller::class, 'detailartikel_dokter'])->middleware('is_dokter');
 
 
 Route::get('km', function () {

@@ -45,7 +45,7 @@
             <img src="/images/mentalvector1.png" alt="">
             <h3>Buat Artikel</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
-            <a href="#" class="btn">Buat Artikel</a>
+            <a href="/Artikel-Dokter" class="btn">Buat Artikel</a>
         </div>
 
     </div>

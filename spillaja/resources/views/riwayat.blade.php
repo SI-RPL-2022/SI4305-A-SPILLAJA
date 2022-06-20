@@ -21,6 +21,7 @@
                                 <div class="riwayat-content">
                                     <h5 class="text-center text-md-left">{{ $data_1->judul_laporan }}</h5>
                                     <p>{{ date('d-M-Y', strtotime($data_1->created_at)) }}</p>
+                                    <p>#Pelecehan</p>
                                 </div>
                             </div>
                             <div class="job-right my-4 flex-shrink-0">
@@ -40,6 +41,7 @@
                                 <div class="riwayat-content">
                                     <h5 class="text-center text-md-left">{{ $data_2->perkara }}</h5>
                                     <p>{{ date('d-M-Y', strtotime($data_2->created_at)) }}</p>
+                                    <p>#Perundungan</p>
                                 </div>
                             </div>
                             <div class="job-right my-4 flex-shrink-0">
