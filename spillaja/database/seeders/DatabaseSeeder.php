@@ -34,5 +34,15 @@ class DatabaseSeeder extends Seeder
             'is_admin' => true,
             'password' => Hash::make('admin'),
         ]);
+        
+        User::create([
+            'nama_depan' => 'dokter',
+            'nama_belakang' => 'dokter',
+            'username' => 'dokter',
+            'no_hp' => '0821400xxxxx',
+            'email' => 'dokter@gmail.com',
+            'is_dokter' => true,
+            'password' => Hash::make('admin'),
+        ]);
     }
 }

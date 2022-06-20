@@ -56,7 +56,7 @@ class authentication_Controller extends Controller
                 return redirect()->intended('/Beranda-Admin');
             } elseif (auth()->user()->is_dokter == 1) {
                 $request->session()->regenerate();
-                return redirect()->intended('/HomeAdmin');
+                return redirect()->intended('/Beranda-Dokter');
             } else {
                 $request->session()->regenerate();
                 return redirect()->intended('/Beranda');

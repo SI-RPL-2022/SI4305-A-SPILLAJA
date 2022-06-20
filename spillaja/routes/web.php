@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\main_Controller;
 use App\Http\Controllers\admin_controller;
+use App\Http\Controllers\dokter_controller;
 use App\Http\Controllers\authentication_Controller;
  
 /*
@@ -39,6 +40,16 @@ Route::get('/Kesehatan-Mental', [main_Controller::class, 'kesehatan_mental']);
 // Admin
 Route::get('/Beranda-Admin', [admin_controller::class, 'index'])->middleware('is_admin');
 Route::post('/Beranda-Admin', [admin_controller::class, 'regis_psikiater'])->middleware('is_admin');
+
+// Dokter
+Route::get('/Beranda-Dokter', [dokter_controller::class, 'index'])->middleware('is_dokter');
+Route::get('/Pelecehan-Dokter', [dokter_controller::class, 'pelecehan_dokter'])->middleware('is_dokter');
+Route::post('/Pelecehan-Dokter', [dokter_controller::class, 'store_pelecehan_seksual'])->middleware('is_dokter');
+Route::get('/Perundungan-Dokter', [dokter_controller::class, 'perundungan_dokter'])->middleware('is_dokter');
+Route::post('/Perundungan-Dokter', [dokter_controller::class, 'store_bullying'])->middleware('is_dokter');
+Route::get('/Riwayat-Dokter', [dokter_controller::class, 'riwayat_dokter'])->middleware('is_dokter');
+Route::get('/Riwayat-Detail-Perundungan-Dokter', [dokter_controller::class, 'riwayatDetailDokter_perundungan'])->middleware('is_dokter');
+Route::get('/Riwayat-Detail-Pelecehan-Dokter', [dokter_controller::class, 'riwayatDetailDokter_pelecehan'])->middleware('is_dokter');
 
 
 Route::get('km', function () {

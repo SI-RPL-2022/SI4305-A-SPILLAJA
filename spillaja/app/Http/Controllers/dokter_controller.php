@@ -2,64 +2,54 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\pelaporan_Bullying;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 use RealRashid\SweetAlert\Facades\Alert;
 use App\Models\pelaporan_pelecehanSeksual;
-use App\Models\psikiater;
 
-class main_Controller extends Controller
+class dokter_controller extends Controller
 {
     public function index()
     {
-        return view('beranda');
+        return view('dokter.berandadokter');
     }
 
-    public function pelecehan()
+    public function pelecehan_dokter()
     {
-        return view('pelecehan');
+        return view('dokter.pelecehandokter');
     }
-
-    public function perundungan()
+    
+    public function perundungan_dokter()
     {
-        return view('perundungan');
+        return view('dokter.perundungandokter');
     }
-
-    public function riwayat()
+    
+    public function riwayat_dokter()
     {
         $user = Auth::user();
         $id = $user->id;
         $data1 = DB::table('pelaporan_pelecehan_seksuals')->where('user_id', '=', $id)->get();
         $data2 = DB::table('pelaporan__bullyings')->where('user_id', '=', $id)->get();
 
-        return view('riwayat', compact('data1', 'data2'));
+        return view('dokter.riwayatdokter', compact('data1', 'data2'));
     }
 
-    public function riwayatDetail_pelecehan(Request $request)
-    {
-        $id = $request->get('id_pelaporan');
-        $data = pelaporan_pelecehanSeksual::find($id);
-
-        return view('riwayatdetail_pelecehan', compact('data'));
-    }
-
-    public function riwayatDetail_perundungan(Request $request)
+    public function riwayatDetailDokter_perundungan(Request $request)
     {
         $id = $request->get('id_pelaporan');
         $data = pelaporan_Bullying::find($id);
 
-        return view('riwayatdetail_perundungan', compact('data'));
+        return view('dokter.riwayatdetaildokter_perundungan', compact('data'));
     }
 
-    public function kesehatan_mental()
+    public function riwayatDetailDokter_pelecehan(Request $request)
     {
-        $data = psikiater::all();
+        $id = $request->get('id_pelaporan');
+        $data = pelaporan_pelecehanSeksual::find($id);
 
-        return view('km', compact('data'));
+        return view('dokter.riwayatdetaildokter_pelecehan', compact('data'));
     }
 
     public function store_pelecehan_seksual(Request $request)
@@ -78,7 +68,7 @@ class main_Controller extends Controller
 
         pelaporan_pelecehanSeksual::create($validatedData);
         Alert::success('Laporan Berhasil Dikirim', 'Laporan akan dikirimkan ke pihak berwajib laporan balasan akan dikirim melalui email selambat-lambatnya 7x24 jam');
-        return redirect('/Pelecehan');
+        return redirect('/Pelecehan-Dokter');
 
         // dd($validatedData);
 
@@ -104,7 +94,7 @@ class main_Controller extends Controller
 
         pelaporan_Bullying::create($validatedData);
         Alert::success('Laporan Berhasil Dikirim', 'Laporan akan dikirimkan ke pihak berwajib laporan balasan akan dikirim melalui email selambat-lambatnya 7x24 jam');
-        return redirect('/Perundungan');
+        return redirect('/Perundungan-Dokter');
 
         // dd($validatedData);
 
