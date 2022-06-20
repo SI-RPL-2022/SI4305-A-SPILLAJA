@@ -33,9 +33,15 @@ Route::post('/Pelecehan', [main_Controller::class, 'store_pelecehan_seksual']);
 Route::get('/Perundungan', [main_Controller::class, 'perundungan']);
 Route::post('/Perundungan', [main_Controller::class, 'store_bullying']);
 Route::get('/Riwayat', [main_Controller::class, 'riwayat']);
+Route::get('/Riwayat-Perundungan', [main_Controller::class, 'riwayat_perundungan']);
+Route::get('/Riwayat-Pelecehan', [main_Controller::class, 'riwayat_pelecehan']);
 Route::get('/Riwayat-Detail-Pelecehan', [main_Controller::class, 'riwayatDetail_pelecehan']);
 Route::get('/Riwayat-Detail-Perundungan', [main_Controller::class, 'riwayatDetail_perundungan']);
 Route::get('/Kesehatan-Mental', [main_Controller::class, 'kesehatan_mental']);
+Route::get('/Resep', [main_controller::class, 'resep']);
+Route::get('/Resep-Detail', [main_controller::class, 'resep_detail']);
+Route::get('/Berita', [main_controller::class, 'halaman_berita']);
+Route::get('/Artikel-Detail-Pasien', [main_controller::class, 'detail_halaman_berita']);
 
 // Admin
 Route::get('/Beranda-Admin', [admin_controller::class, 'index'])->middleware('is_admin');
@@ -47,6 +53,8 @@ Route::get('/Pelecehan-Dokter', [dokter_controller::class, 'pelecehan_dokter'])-
 Route::post('/Pelecehan-Dokter', [dokter_controller::class, 'store_pelecehan_seksual'])->middleware('is_dokter');
 Route::get('/Perundungan-Dokter', [dokter_controller::class, 'perundungan_dokter'])->middleware('is_dokter');
 Route::post('/Perundungan-Dokter', [dokter_controller::class, 'store_bullying'])->middleware('is_dokter');
+Route::get('/Riwayat-Perundungan', [dokter_Controller::class, 'riwayat_perundungan'])->middleware('is_dokter');
+Route::get('/Riwayat-Pelecehan', [dokter_Controller::class, 'riwayat_pelecehan'])->middleware('is_dokter');
 Route::get('/Riwayat-Dokter', [dokter_controller::class, 'riwayat_dokter'])->middleware('is_dokter');
 Route::get('/Riwayat-Detail-Perundungan-Dokter', [dokter_controller::class, 'riwayatDetailDokter_perundungan'])->middleware('is_dokter');
 Route::get('/Riwayat-Detail-Pelecehan-Dokter', [dokter_controller::class, 'riwayatDetailDokter_pelecehan'])->middleware('is_dokter');

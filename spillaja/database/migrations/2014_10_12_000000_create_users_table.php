@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->boolean('is_admin')->nullable();
             $table->boolean('is_dokter')->nullable();
+            $table->string('resep')->nullable();
             $table->string('password');
         });
     }

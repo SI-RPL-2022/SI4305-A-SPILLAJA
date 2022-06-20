@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('resep__dokters', function (Blueprint $table) {
             $table->id();
             $table->string('nama_dokter');
-            $table->string('nama_pasien');
+            $table->string('id_pasien');
             $table->string('umur');
             $table->date('tanggal');
             $table->string('nama_obat');

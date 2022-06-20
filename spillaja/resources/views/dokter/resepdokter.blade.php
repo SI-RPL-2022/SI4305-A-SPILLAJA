@@ -19,8 +19,15 @@
                         <input type="text" placeholder="Tuliskan Nama Lengkap Dokter" name="nama_dokter">
                     </div>
                     <div class="col">
-                        <label for="email">Nama Pasien</label>
-                        <input type="text" id="" placeholder="Tuliskan Nama Lengkap Pasien" name="nama_pasien">
+                        <label for="email">Id Pasien</label>
+                        <!-- <input type="text" id="" placeholder="Tuliskan Nama Lengkap Pasien" name="nama_pasien"> -->
+                        <select class="form-select" id="table-right" name="id_pasien">
+                            <option selected>Pilih Pasien</option>
+                            @foreach ($user as $index => $id)
+                            <option value="{{ $id->id }}">{{ $id->nama_depan.' '.$id->nama_belakang.' | '.$id->id }}
+                            </option>
+                            @endforeach
+                        </select>
                     </div>
                 </div>
                 <div class="row">

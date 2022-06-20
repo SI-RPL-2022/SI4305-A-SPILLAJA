@@ -79,7 +79,7 @@
 
 <!-- review section starts  -->
 
-<section class="review" id="review">
+{{-- <section class="review" id="review">
 
     <h1 class="heading"> Ulasan <span>#sobatspill</span> </h1>
 
@@ -147,7 +147,7 @@
 
     </div>
 
-</section>
+</section> --}}
 
 <!-- review section ends -->
 

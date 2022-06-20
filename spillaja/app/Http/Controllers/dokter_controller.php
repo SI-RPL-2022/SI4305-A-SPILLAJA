@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Artikel;
+use App\Models\User;
 use Illuminate\Support\Str;
 use App\Models\Resep_Dokter;
 use Illuminate\Http\Request;
@@ -28,10 +29,30 @@ class dokter_controller extends Controller
     {
         return view('dokter.perundungandokter');
     }
+
+    public function riwayat_perundungan()
+    {
+        $user = Auth::user();
+        $id = $user->id;
+        $datas = DB::table('pelaporan__bullyings')->where('user_id', '=', $id)->get();
+
+        return view('dokter.riwayat_perundungan', compact('datas'));
+    }
+
+    public function riwayat_pelecehan()
+    {
+        $user = Auth::user();
+        $id = $user->id;
+        $datas = DB::table('pelaporan_pelecehan_seksuals')->where('user_id', '=', $id)->get();
+
+        return view('dokter.riwayat_pelecehan', compact('datas'));
+    }
     
     public function resep_dokter()
     {
-        return view('dokter.resepdokter');
+        $user = DB::table('users')->where('is_admin', '=', null)->where('is_dokter', '=', null)->get();
+        // dd($user);
+        return view('dokter.resepdokter', compact('user'));
     }
     
     public function berita_dokter()
@@ -130,13 +151,20 @@ class dokter_controller extends Controller
     {
         $validatedData = $request->validate([
             'nama_dokter' => 'required',
-            'nama_pasien' => 'required',
+            'id_pasien' => 'required',
             'umur' => 'required',
             'tanggal' => 'required',
             'nama_obat' => 'required'
         ]);
 
         Resep_Dokter::create($validatedData);
+
+        $id = $request->id_pasien;
+        $data = User::find($id);
+        // dd($data);
+        $data->resep = $request->nama_obat;
+        $data->save();
+        
         Alert::success('Resep Berhasil Dibuat', 'Silahkan cek kembali apakah resep yang ditulis sudah benar');
         return redirect('/Resep-Dokter');
     }

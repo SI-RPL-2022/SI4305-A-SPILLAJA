@@ -65,9 +65,7 @@
         <div class="box">
             <img src="/images/logo.png" alt="">
             <h3>Tentang Kami</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae nulla alias quos reiciendis eaque eos
-                ducimus soluta voluptatibus? Natus nemo aspernatur suscipit similique doloribus provident officiis fuga
-                accusantium molestias nihil!</p>
+            <p>Spillaja merupakan sebuah aplikasi berbasis web pelaporan pelecehan seksual, bullying dan juga konsultasi kesehatan mental. Spillaja dapat menjadi solusi bagi anda yang takut atau bingung jika mengalami hal pelecehan seksual, bullying dan ganguuan mental. Spillaja berperan sebagai penghubung antara anda dengan pihak berwajib yang menangangi hal-hal tersebut.</p>
         </div>
     </div>
 
@@ -78,7 +76,7 @@
 
 <!-- review section starts  -->
 
-<section class="review" id="review">
+{{-- <section class="review" id="review">
 
     <h1 class="heading"> Ulasan <span>#sobatspill</span> </h1>
 
@@ -146,7 +144,7 @@
 
     </div>
 
-</section>
+</section> --}}
 
 <!-- review section ends -->
 

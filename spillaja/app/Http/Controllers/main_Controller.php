@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Artikel;
+use App\Models\psikiater;
+use App\Models\Resep_Dokter;
 use Illuminate\Http\Request;
 use App\Models\pelaporan_Bullying;
 use Illuminate\Support\Facades\DB;
@@ -10,7 +13,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use RealRashid\SweetAlert\Facades\Alert;
 use App\Models\pelaporan_pelecehanSeksual;
-use App\Models\psikiater;
 
 class main_Controller extends Controller
 {
@@ -29,6 +31,21 @@ class main_Controller extends Controller
         return view('perundungan');
     }
 
+    public function halaman_berita()
+    {
+        $datas = Artikel::all();
+        // dd($data);
+        return view('halamanberitapasien', compact('datas'));
+    }
+
+    public function detail_halaman_berita(Request $request)
+    {
+        $id = $request->get('id');
+        $datas = DB::table('artikels')->where('id', '=', $id)->get();
+
+        return view('detailartikelpasien', compact('datas'));
+    }
+
     public function riwayat()
     {
         $user = Auth::user();
@@ -37,6 +54,41 @@ class main_Controller extends Controller
         $data2 = DB::table('pelaporan__bullyings')->where('user_id', '=', $id)->get();
 
         return view('riwayat', compact('data1', 'data2'));
+    }
+
+    public function riwayat_perundungan()
+    {
+        $user = Auth::user();
+        $id = $user->id;
+        $datas = DB::table('pelaporan__bullyings')->where('user_id', '=', $id)->get();
+
+        return view('riwayat_perundungan', compact('datas'));
+    }
+    
+    public function riwayat_pelecehan()
+    {
+        $user = Auth::user();
+        $id = $user->id;
+        $datas = DB::table('pelaporan_pelecehan_seksuals')->where('user_id', '=', $id)->get();
+
+        return view('riwayat_pelecehan', compact('datas'));
+    }
+
+    public function resep()
+    {
+        $data = Resep_Dokter::all();
+        // dd($data);
+        return view('Resep', compact('data'));
+    }
+
+    public function resep_detail(Request $request)
+    {
+        $id = $request->get('id');
+        $data = DB::table('resep__dokters')->where('id', '=', $id)->get();
+        $pasien = DB::table('users')->where('id', '=', $id)->get();
+        // dd($data[0]->nama_dokter); 
+        // dd($pasien[0]);  
+        return view('resepdetail', compact('data'), compact('pasien'));
     }
 
     public function riwayatDetail_pelecehan(Request $request)

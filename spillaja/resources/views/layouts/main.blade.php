@@ -31,17 +31,28 @@
 
         <nav class="navbar">
             <a style="text-decoration:none" href="/Beranda">Beranda</a>
-            <a style="text-decoration:none" href="/Beranda#features">Pengaduan</a>
-            <a style="text-decoration:none" href="/Beranda#tentang">Tentang</a>
-            <a style="text-decoration:none" href="/Beranda#review">Ulasan</a>
+            <a style="text-decoration:none" href="/Berita">Artikel</a>
+            <a style="text-decoration:none" href="/Resep">Resep</a>
+            <a style="text-decoration:none" href="/Riwayat">Riwayat</a>
         </nav>
 
         <div class="icons">
             <div class="fas fa-user" id="login-btn"></div>
         </div>
 
+        <form action="/Logout" method="POST" class="login-form">
+            @csrf
+            <h3>{{ auth()->user()->username }}</h3>
+            <div class="row toggle-riwayat-logout">
+                <form action="/Logout" method="POST">
+                    @csrf
+                    <button type="submit">Keluar</button>
+                </form>
+            </div>
+        </form>
+
         <!-- <form action="" class="login-form"> -->
-        <h3>{{ auth()->user()->username }}</h3>
+        {{-- <h3>{{ auth()->user()->username }}</h3>
         <div class="row toggle-riwayat-logout">
             <a style="text-decoration:none" href="/Riwayat">Riwayat</a>
         </div>
@@ -50,7 +61,7 @@
                 @csrf
                 <button type="submit">Keluar</button>
             </form>
-        </div>
+        </div> --}}
         {{-- <input type="email" placeholder="your email" class="box">
         <input type="password" placeholder="your password" class="box">
         <p>forget your password <a href="#">click here</a></p>
@@ -74,7 +85,7 @@
 
             <div class="box">
                 <a href="#" class="logo"> <img src="images/logo.png" style="width: 120px;"></a>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+                <p>Solusi dari segala kegelisahan anda</p>
                 <div class="share">
                     <a href="#" class="fab fa-facebook-f"></a>
                     <a href="#" class="fab fa-twitter"></a>
@@ -96,7 +107,6 @@
                 <a href="/Beranda" class="links"> <i class="fas fa-arrow-right"></i> beranda </a>
                 <a href="/Beranda#features" class="links"> <i class="fas fa-arrow-right"></i> pengaduan </a>
                 <a href="/Beranda#tentang" class="links"> <i class="fas fa-arrow-right"></i> tentang </a>
-                <a href="/Beranda#review" class="links"> <i class="fas fa-arrow-right"></i> ulasan </a>
             </div>
 
 

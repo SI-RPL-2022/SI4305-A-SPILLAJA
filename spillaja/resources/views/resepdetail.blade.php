@@ -1,4 +1,4 @@
-@extends('layouts.maindokter')
+@extends('layouts.main')
 <link rel="stylesheet" href="css/style.css">
 
 @section('container')
@@ -16,27 +16,27 @@
                 <div class="row">
                     <div class="col">
                         <label for="name">Nama Dokter</label>
-                        <p>ucup</p>
+                        <p>{{ $data[0]->nama_dokter }}</p>
                     </div>
                     <div class="col">
-                        <label for="email">Id Pasien</label>
-                        <p>Ucupah</p>
+                        <label for="email">Nama Pasien</label>
+                        <p>{{ $pasien[0]->nama_depan. ' ' .$pasien[0]->nama_belakang }}</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label for="subject">Umur</label>
-                        <p>19</p>
+                        <p>{{ $data[0]->umur }}</p>
                     </div>
                     <div class="col">
                         <label for="contact">Tanggal</label>
-                        <p>20 Juni 2022</p>
+                        <p>{{ $data[0]->tanggal }}</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label for="subject">Nama Obat</label>
-                        <p>-Panadol</p>
+                        <p>{{ $data[0]->nama_obat }}</p>
                     </div>
                     <div class="col">
                     </div>

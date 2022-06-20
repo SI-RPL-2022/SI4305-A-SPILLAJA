@@ -40,14 +40,26 @@
             <div class="fas fa-user" id="login-btn"></div>
         </div>
 
+        {{-- <h3>{{ auth()->user()->username }}</h3>
+        <div class="row toggle-riwayat-logout">
+            <a style="text-decoration:none" href="/Riwayat">Riwayat</a>
+        </div>
+        <div class="row toggle-riwayat-logout">
+            <form action="/Logout" method="POST">
+                @csrf
+                <button type="submit">Keluar</button>
+            </form>
+        </div> --}}
+
         <form action="/Logout" method="POST" class="login-form">
             @csrf
-            <h3>User</h3>
-            <input type="email" placeholder="your email" class="box">
-            <input type="password" placeholder="your password" class="box">
-            <p>forget your password <a href="#">click here</a></p>
-            <p>don't have an account <a href="#">create now</a></p>
-            <input type="submit" value="Log Out" class="btn">
+            <h3>{{ auth()->user()->username }}</h3>
+            <div class="row toggle-riwayat-logout">
+                <form action="/Logout" method="POST">
+                    @csrf
+                    <button type="submit">Keluar</button>
+                </form>
+            </div>
         </form>
 
     </header>
