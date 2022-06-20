@@ -15,7 +15,7 @@
         integrity="sha256-3sPp8BkKUE7QyPSl6VfBByBroQbKxKG7tsusY2mhbVY=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Hello, world!</title>
+    <title>Admin #spillaja</title>
 </head>
 
 <body>
@@ -39,12 +39,12 @@
 
     <section class="formulir" id="formulir">
 
-        <h1 class="heading"> Pendaftaran Akun Dokter <span>#spillaja</span> </h1>
+        <h1 class="heading"> Pendaftaran Informasi Dokter <span>#spillaja</span> </h1>
 
         <div class="box-container">
 
             <div class="box">
-                <h3>Form Pendaftaran</h3>
+                <h3>Form Pendaftaran Informasi</h3>
                 <form action="/Beranda-Admin" method="POST">
                     @csrf
                     <div class="row">

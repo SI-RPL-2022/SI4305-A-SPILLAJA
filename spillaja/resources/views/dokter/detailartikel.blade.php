@@ -10,7 +10,7 @@
     <div class="box-container">
 
         <div class="box">
-            <h3>Cara Pintar Menjaga Imun Tubuh</h3>
+            <h3>{{ $data->judul_artikel }}</h3>
             <form>
                 <div class="col">
                     <img src="{{ asset('storage/' . $data->gambar) }}" alt="" width="500px" class="center">

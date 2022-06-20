@@ -65,7 +65,9 @@
         <div class="box">
             <img src="/images/logo.png" alt="">
             <h3>Tentang Kami</h3>
-            <p>Spillaja merupakan sebuah aplikasi berbasis web pelaporan pelecehan seksual, bullying dan juga konsultasi kesehatan mental. Spillaja dapat menjadi solusi bagi anda yang takut atau bingung jika mengalami hal pelecehan seksual, bullying dan ganguuan mental. Spillaja berperan sebagai penghubung antara anda dengan pihak berwajib yang menangangi hal-hal tersebut.</p>
+            <p>spillaja merupakan sebuah aplikasi berbasis web pelaporan pelecehan seksual, bullying dan juga konsultasi kesehatan mental. 
+               spillaja dapat menjadi solusi bagi anda yang takut atau bingung jika mengalami hal pelecehan seksual, bullying dan ganguuan mental. 
+               spillaja berperan sebagai penghubung antara anda dengan pihak berwajib yang menangangi hal-hal tersebut.</p>
         </div>
     </div>
 

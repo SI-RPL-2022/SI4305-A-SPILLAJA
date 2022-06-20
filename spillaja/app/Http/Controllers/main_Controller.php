@@ -56,7 +56,7 @@ class main_Controller extends Controller
         return view('riwayat', compact('data1', 'data2'));
     }
 
-    public function riwayat_perundungan()
+    public function riwayat_perundungann()
     {
         $user = Auth::user();
         $id = $user->id;
@@ -65,7 +65,7 @@ class main_Controller extends Controller
         return view('riwayat_perundungan', compact('datas'));
     }
     
-    public function riwayat_pelecehan()
+    public function riwayat_pelecehann()
     {
         $user = Auth::user();
         $id = $user->id;

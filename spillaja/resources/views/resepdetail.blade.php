@@ -5,7 +5,7 @@
 
 <section class="formulir" id="formulir">
 
-    <h1 class="heading"> Formulir Laporan <span>#spillaja</span> </h1>
+    <h1 class="heading"> Resep <span>#spillaja</span> </h1>
 
     <div class="box-container">
 

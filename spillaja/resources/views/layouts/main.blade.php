@@ -85,12 +85,12 @@
 
             <div class="box">
                 <a href="#" class="logo"> <img src="images/logo.png" style="width: 120px;"></a>
-                <p>Solusi dari segala kegelisahan anda</p>
+                <p></p>
                 <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-instagram"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"></a>
+                    <a href="" class="fab fa-instagram"></a>
+                    <a href="" class="fab fa-linkedin"></a>
                 </div>
             </div>
 
@@ -107,6 +107,7 @@
                 <a href="/Beranda" class="links"> <i class="fas fa-arrow-right"></i> beranda </a>
                 <a href="/Beranda#features" class="links"> <i class="fas fa-arrow-right"></i> pengaduan </a>
                 <a href="/Beranda#tentang" class="links"> <i class="fas fa-arrow-right"></i> tentang </a>
+                <a href="/Beranda#review" class="links"> <i class="fas fa-arrow-right"></i> ulasan </a>
             </div>
 
 

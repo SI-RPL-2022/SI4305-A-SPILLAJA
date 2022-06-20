@@ -30,10 +30,10 @@
         <a href="#" class="logo"> <img src="images/logo.png" style="width: 120px;"></a>
 
         <nav class="navbar">
-            <a href="/Beranda-Dokter">Beranda</a>
-            <a href="/Berita-Dokter">Artikel</a>
-            <a href="/Resep-Dokter">Resep</a>
-            <a href="/Riwayat-Dokter">Riwayat</a>
+            <a style="text-decoration:none" href="/Beranda-Dokter">Beranda</a>
+            <a style="text-decoration:none" href="/Berita-Dokter">Artikel</a>
+            <a style="text-decoration:none" href="/Resep-Dokter">Resep</a>
+            <a style="text-decoration:none" href="/Riwayat-Dokter">Riwayat</a>
         </nav>
 
         <div class="icons">
@@ -78,7 +78,7 @@
 
             <div class="box">
                 <a href="#" class="logo"> <img src="images/logo.png" style="width: 120px;"></a>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+                <p></p>
                 <div class="share">
                     <a href="#" class="fab fa-facebook-f"></a>
                     <a href="#" class="fab fa-twitter"></a>

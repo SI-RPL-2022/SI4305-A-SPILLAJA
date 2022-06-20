@@ -6,11 +6,11 @@
 
 <section class="formulir" id="formulir">
 
-    <h1 class="heading-buatartikel"> Formulir Artikel <span>#spillaja</span> </h1>
+    <h1 class="heading"> Formulir Artikel <span>#spillaja</span> </h1>
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box"> 
             <h3>Buat Artikel</h3>
             <form action="/Artikel-Dokter" method="POST" enctype="multipart/form-data">
                 @csrf

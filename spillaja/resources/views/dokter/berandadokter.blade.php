@@ -9,8 +9,7 @@
 
     <div class="content">
         <h3>Selamat Datang <span>#sobatspill</span></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam libero nostrum veniam facere tempore nisi.
-        </p>
+        <p>Aplikasi website pelaporan pelecehan seksual, bullying dan juga konsultasi kesehatan mental</p>
         <a href="#features" class="btn">Lapor Sekarang</a>
     </div>
 
@@ -30,21 +29,21 @@
         <div class="box">
             <img src="/images/shvector1.png" alt="">
             <h3>Pelecehan Seksual</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <p>Form pelaporan pelecehan seksual, laporkan peluku pelecehan seksual!</p>
             <a href="/Pelecehan-Dokter" class="btn">Buat Laporan</a>
         </div>
 
         <div class="box">
             <img src="/images/perundunganvector1.png" alt="">
             <h3>Perundungan</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <p>Form pelaporan bullying, laporkan perlakuan bullying yang anda alami</p>
             <a href="/Perundungan-Dokter" class="btn">Buat Laporan</a>
         </div>
 
         <div class="box">
             <img src="/images/mentalvector1.png" alt="">
             <h3>Buat Artikel</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <p>Membuat artikel untuk informasi kepada pasiean agar dapat mencegah</p>
             <a href="/Artikel-Dokter" class="btn">Buat Artikel</a>
         </div>
 
@@ -66,9 +65,9 @@
         <div class="box">
             <img src="/images/logo.png" alt="">
             <h3>Tentang Kami</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae nulla alias quos reiciendis eaque eos
-                ducimus soluta voluptatibus? Natus nemo aspernatur suscipit similique doloribus provident officiis fuga
-                accusantium molestias nihil!</p>
+            <p>spillaja merupakan sebuah aplikasi berbasis web pelaporan pelecehan seksual, bullying dan juga konsultasi kesehatan mental. 
+                spillaja dapat menjadi solusi bagi anda yang takut atau bingung jika mengalami hal pelecehan seksual, bullying dan ganguuan mental. 
+                spillaja berperan sebagai penghubung antara anda dengan pihak berwajib yang menangangi hal-hal tersebut.</p>
         </div>
     </div>
 

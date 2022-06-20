@@ -17,10 +17,10 @@
                         <div class="filter-riwayat text-center">
                             <div class="row">
                                 <div class="col">
-                                    <a href='/Riwayat-Pelecehan' class=" btn  btn-primary">Pelecehan</a>
+                                    <a href='/Riwayat-Pelecehann' class=" btn  btn-primary">Pelecehan</a>
                                 </div>
                                 <div class="col">
-                                    <a href='/Riwayat-Perundungan' class=" btn btn-primary">Perundungan</a>
+                                    <a href='/Riwayat-Perundungann' class=" btn btn-primary">Perundungan</a>
                                 </div>
                             </div>
                         </div>
